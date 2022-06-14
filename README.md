@@ -2,8 +2,10 @@
 
 ### Description
 
-This app manages your books library as you have a three main shelves: 
+This app manages your books library as you have a three main shelves:
+
 ### Currently Reading:
+
 that contains the books you already reads it right in this time.
 
 ### Want to Read:
@@ -27,6 +29,8 @@ This app built by React JS library and Bootstrap 5.
 # Instructions
 
 just install the npm package and bootstrap and router-dom then have fun with your library.
+
+(as a view you can access the website through: https://my-reads-udacity-1104.web.app)
 
 ---
 

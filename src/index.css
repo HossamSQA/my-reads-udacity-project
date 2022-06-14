@@ -31,7 +31,7 @@ html {
 body {
   font-family: "Cairo", sans-serif !important;
   line-height: 2 !important;
-  background-image: url(./components/UI/images/backgroundImage.jpg);
+  background-image: url(./components/images/backgroundImage.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
