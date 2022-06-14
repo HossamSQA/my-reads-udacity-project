@@ -2,7 +2,8 @@
 
 ### Description
 
-This app manages your books library as you have a three main shelves: ## Currently Reading:
+This app manages your books library as you have a three main shelves: 
+### Currently Reading:
 that contains the books you already reads it right in this time.
 
 ### Want to Read:
