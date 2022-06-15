@@ -7,9 +7,22 @@ const SingleBookCard = ({ book, updateShelves }) => {
   };
 
   // function to reduce the number of letters and added a 3 dots at the end of the title to save space
-  const truncate = (str, n) => {
-    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
-  };
+  // const truncate = (str, n) => {
+  //   return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+  // };
+  // NOTE: this function disabled due to users cannot search for more than one word
+
+  // Array of all the shelves to display in the dropdown
+  // const shelves = [
+  //   {
+  //     id: 1,
+  //     shelfName: "CurrentReading",
+  //     shelfDisplayName: "Currently Reading",
+  //   },
+  //   { id: 2, shelfName: "WantToRead", shelfDisplayName: "Want to Read" },
+  //   { id: 3, shelfName: "Read", shelfDisplayName: "Read" },
+  //   { id: 4, shelfName: "None", shelfDisplayName: "None" },
+  // ];
 
   return (
     // using bootstrap card to display book info
@@ -26,10 +39,14 @@ const SingleBookCard = ({ book, updateShelves }) => {
       />
       <Card.Body>
         <Card.Title />
-        <Card.Text className="fw-bold">{truncate(book.title, 24)}</Card.Text>
+        <Card.Text className="fw-bold">
+          {book.title}
+          {/* {truncate(book.title, 24)} */}
+        </Card.Text>
         <Card.Text>
           <span className="text-primary">Written by: </span>
-          {truncate(book.authors.toString(), 30)}
+          {book.authors}
+          {/* {truncate(book.authors.toString(), 30)} */}
         </Card.Text>
       </Card.Body>
       <div className="d-flex justify-content-start rounded">
@@ -38,9 +55,16 @@ const SingleBookCard = ({ book, updateShelves }) => {
           value={book.shelf ? book.shelf : "none"}
           className="bg-dark rounded text-light p-1"
         >
-          <option value="none" disabled>
-            Move to...
-          </option>
+          <option disabled>Move to...</option>
+
+          {/* didn't work properly */}
+
+          {/* {shelves.map((shelf) => (
+            <option key={shelf.id} value={shelf.shelfName}>
+              {shelf.shelfDisplayName}
+            </option>
+          ))} */}
+
           <option value="currentlyReading">Currently Reading</option>
           <option value="wantToRead">Want to Read</option>
           <option value="read">Read</option>
