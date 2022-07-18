@@ -28,7 +28,7 @@ This app built by React JS library and Bootstrap 5.
 
 # Instructions
 
-just install the npm package and bootstrap and router-dom then have fun with your library.
+just install the npm package, router-dom and Bootstrap 5 then have fun with your library.
 
 (as a view you can access the website through: https://my-reads-udacity-1104.web.app)
 
